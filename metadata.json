@@ -1,0 +1,8 @@
+{
+  "name": "Junior Astronaut Mission Trainer",
+  "description": "Interactive sci-fi space academy decision-making game featuring suit fitting, survival backpack packing, rocket launch control, and Commander Reyes guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

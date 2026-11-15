@@ -1,0 +1,75 @@
+{
+  "level1_prep_and_launch": {
+    "site": "Kennedy Space Center LC-39B",
+    "geomagneticStormIndex": 3,
+    "weatherStatus": "Nominal - Clear for T-Minus Countdown",
+    "suits": [
+      { "id": "standard", "name": "Artemis Mk-IV Standard", "maxOxygen": 100, "maxPower": 100, "baseSpeed": 100 },
+      { "id": "heavy_shield", "name": "Solar-Guard EVA Suit", "maxOxygen": 90, "maxPower": 120, "baseSpeed": 85 },
+      { "id": "recon_light", "name": "Valkyrie Recon Suit", "maxOxygen": 115, "maxPower": 85, "baseSpeed": 120 }
+    ],
+    "ariaResponse": {
+      "ariaDialogue": "ARIA: Upper atmosphere wind shear detected at T+45s. Power at 82.0%, O2 at 91.5%.",
+      "updatedTelemetry": { "oxygenLevel": 91.5, "suitPower": 82.0, "speed": 115 },
+      "detailedMeters": {
+        "o2Percent": 91.5,
+        "waterPercent": 95.0,
+        "foodPercent": 96.0,
+        "powerPercent": 82.0,
+        "shieldPercent": 88.0,
+        "suitIntegrityPercent": 90.0,
+        "thermalCelsius": -12.4,
+        "massKg": 4950.0,
+        "fuelKg": 1450.0
+      }
+    }
+  },
+  "level2_transit": {
+    "solarFlareClass": "M2.4",
+    "radiationAlert": true,
+    "asteroids": [
+      { "id": "AST-104", "diameterMeters": 42, "velocityKms": 18.5, "hazardLevel": "Medium" },
+      { "id": "AST-209", "diameterMeters": 85, "velocityKms": 24.1, "hazardLevel": "High" }
+    ],
+    "ariaResponse": {
+      "ariaDialogue": "ARIA: Alert! Class M2.4 solar flare on Sol 42. Shields at 68.5%, Power 71.2%.",
+      "updatedTelemetry": { "oxygenLevel": 84.2, "suitPower": 68.5, "speed": 100 },
+      "detailedMeters": {
+        "o2Percent": 84.0,
+        "waterPercent": 89.8,
+        "foodPercent": 91.9,
+        "powerPercent": 68.5,
+        "shieldPercent": 72.4,
+        "suitIntegrityPercent": 68.5,
+        "thermalCelsius": -61.2,
+        "massKg": 4799.5,
+        "fuelKg": 1298.0
+      }
+    }
+  },
+  "level3_mars": {
+    "landingZone": "Jezero Crater",
+    "surfaceTempCelsius": -62,
+    "dustOpacity": 0.45,
+    "waypoints": [
+      { "id": "WP-1", "name": "Perseverance Rover Beacon", "x": 120, "y": 340, "hazard": "None" },
+      { "id": "WP-2", "name": "Ancient River Delta Ridge", "x": 480, "y": 210, "hazard": "High Radiation" },
+      { "id": "WP-3", "name": "ISRU Oxygen Extraction Base", "x": 850, "y": 500, "hazard": "Dust Squall" }
+    ],
+    "ariaResponse": {
+      "ariaDialogue": "ARIA: Dust squall crossing Jezero Crater. Thermal -64.0C, Suit integrity 74.0%.",
+      "updatedTelemetry": { "oxygenLevel": 76.0, "suitPower": 64.0, "speed": 85 },
+      "detailedMeters": {
+        "o2Percent": 76.0,
+        "waterPercent": 85.0,
+        "foodPercent": 88.0,
+        "powerPercent": 64.0,
+        "shieldPercent": 70.0,
+        "suitIntegrityPercent": 74.0,
+        "thermalCelsius": -64.0,
+        "massKg": 4620.0,
+        "fuelKg": 1120.0
+      }
+    }
+  }
+}
